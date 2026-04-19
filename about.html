@@ -4,8 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
+            background-color: #fff;
+            color: #333;
+        }
+        nav {
+            margin-bottom: 40px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        h2 {
+            margin-top: 30px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #ccc;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: justify;
+        }
+        .skills {
+            margin: 20px 0;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .skills li {
+            display: inline-block;
+            background: #eee;
+            margin: 5px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .project-results {
+            margin-top: 30px;
+            text-align: left;
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        .project-results h3 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .result-item {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            background: #ffffff;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .result-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-color: #333;
+        }
+        .result-item strong {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #000;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 5px;
+        }
+        .result-item span {
+            display: block;
+            font-size: 0.85em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .result-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 10px auto 0;
+        }
+        .result-item a {
+            display: inline-block;
+            margin-top: 5px;
+            color: #000;
+            text-decoration: underline;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <nav>
+        <a href="nav.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2>About Me</h2>
+
+    <div class="container">
+        <p>
+            Halo! Saya <strong>M Arif Budi Prakoso</strong>, seorang mahasiswa Teknologi Informasi di Universitas Mercu Buana Yogyakarta. 
+            Saya memiliki minat yang besar dalam pengembangan perangkat lunak dan manajemen basis data.
+        </p>
+        <p>
+            Saat ini, saya sedang fokus memperdalam kemampuan dalam pemrograman backend menggunakan Java dan C++, serta pengembangan web modern. 
+            Saya senang memecahkan masalah kompleks melalui kode dan selalu antusias untuk mempelajari teknologi baru.
+        </p>
+        
+        <h3 style="text-align: center; margin-top: 30px;">Technical Skills</h3>
+        <ul class="skills">
+            <li>Photography</li>
+            <li>C / C++</li>
+            <li>HTML & CSS</li>
+            <li>Database Administration</li>
+            <li>Oracle PL/SQL</li>
+        </ul>
+
+        <div class="project-results">
+            <h3>Project & Results</h3>
+            
+            <div class="result-item">
+                <strong>Concert Ticket Reservation System</strong>
+                <span>Berhasil merancang database menggunakan Oracle PL/SQL lengkap dengan ERD, triggers, dan packages untuk manajemen tiket konser secara otomatis.</span>
+            </div>
+
+            <div class="result-item">
+                <strong>Personal Web Tribute</strong>
+                <span>Mengembangkan halaman web responsif menggunakan HTML dan CSS dengan integrasi media (Spotify & YouTube API).</span>
+                <a href="https://b0ed1.github.io/cc/" target="_blank">View Results</a>
+            </div>
+
+            <div class="result-item">
+                <strong>Photography Portfolio</strong>
+                <span>Menangkap momen melalui lensa dengan fokus pada komposisi dan pencahayaan alami.</span>
+                <img src="Addon/porto.jpg" alt="Photography">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
