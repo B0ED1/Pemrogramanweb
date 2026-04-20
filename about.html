@@ -89,12 +89,29 @@
             color: #666;
             margin-bottom: 10px;
         }
-        .result-item img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            display: block;
-            margin: 10px auto 0;
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .photo-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            border: 1px solid #eee;
+            margin: 0 !important;
+        }
+
+        .photo-grid img:hover {
+            transform: scale(1.05);
+            z-index: 10;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         .result-item a {
             display: inline-block;
@@ -144,15 +161,22 @@
             <div class="result-item">
                 <strong>Personal Web Tribute</strong>
                 <span>Mengembangkan halaman web responsif menggunakan HTML dan CSS dengan integrasi media (Spotify & YouTube API).</span>
-                <a href="https://b0ed1.github.io/cc/" target="_blank">View Results</a>
+                <a href="sabar.html" target="_blank">View Results</a>
             </div>
-
+            
             <div class="result-item">
                 <strong>Photography Portfolio</strong>
-                <span>Menangkap momen melalui lensa dengan fokus pada komposisi dan pencahayaan alami.</span>
-                <img src="Addon/porto.jpg" alt="Photography">
+                <span>Menangkap momen melalui handphone tanpa komposisi dan hanya menggunakan pencahayaan alami.</span>
+                
+                <div class="photo-grid">
+                    <img src="Addon/porto.jpg" alt="Photography">
+                    <img src="Addon/pantai.jpeg" alt="Beach">
+                    <img src="Addon/malio.jpeg" alt="Malioboro at night">
+                    <img src="Addon/gramed.jpeg" alt="Rak buku">
+                    <img src="Addon/gataujuga.jpeg" alt="Lake">
+                    <img src="Addon/flower.jpeg" alt="Fresh flower for mom">
+                </div>
             </div>
-        </div>
     </div>
 </body>
 </html>
