@@ -4,28 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praktikum Pemrograman Web</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #334155;
+        }
+
+        .main-card {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 24px;
+            border: 1px solid #cbd5e1;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-container img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f1f5f9;
+            outline: 2px solid #64748b;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .intro h1 {
+            font-size: 2em;
+            margin: 10px 0;
+            color: #1e293b;
+        }
+
+        .details {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            border: 1px dashed #cbd5e1;
+        }
+
+        .details p {
+            font-size: 1.1em;
+            margin: 5px 0;
+            color: #475569;
+        }
+
+        .button-group {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+        }
+
+        .btn-nav {
+            background-color: #334155;
+            color: #ffffff;
+            border: 1px solid #334155;
+        }
+
+        .btn-nav:hover {
+            background-color: #1e293b;
+            box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .btn-next {
+            background-color: transparent;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-next:hover {
+            background-color: #f1f5f9;
+            border-color: #334155;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body style="background-color:rgb(135, 204, 239);">
+<body>
 
-    <div style="text-align: center;">
-        <img src="https://i.pinimg.com/736x/cf/85/b9/cf85b92b0ace7cec1fd9665fc2d029a1.jpg" alt="MBG" width="250">
-    </div>
+    <div class="main-card">
+        <div class="profile-container">
+            <img src="https://i.pinimg.com/736x/cf/85/b9/cf85b92b0ace7cec1fd9665fc2d029a1.jpg" alt="Profile Arif">
+        </div>
 
-    <div style="text-align: center; font-size: xx-large;">
-        <p><b>Hola, soy Arif</b></p>
-    </div>
+        <div class="intro">
+            <h1>Hola, soy Arif</h1>
+        </div>
 
-    <div style="text-align: center;">
-        <p><b>Jurusan: Informatika</b></p>
-        <p><b>NIM: 241110103</b></p>
-    </div>
+        <div class="details">
+            <p><b>Informatika</b></p>
+            <p>NIM: 241110103</p>
+        </div>
 
-    <div style="text-align: center;">
-        <button style="border-radius: 5px;">
-            <a href="page2.html" target="_self" title="Tap to Page 2">
-                Next
-            </a>
-        </button>
+        <div class="button-group">
+            <a href="nav.html" class="btn btn-nav">Portofolio</a>
+            <a href="page2.html" class="btn btn-next" title="Tap to Page 2">Next</a>
+        </div>
     </div>
 
 </body>

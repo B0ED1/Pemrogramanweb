@@ -3,29 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 2</title>
+    <title>Page 2 - Media & Form</title>
+    <style>
+        body {
+            background-color: #f0f4f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 40px 20px;
+            margin: 0;
+            color: #334155;
+        }
+
+        .main-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #cbd5e1;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 12px;
+            font-weight: bold;
+            color: #1e293b;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #f1f5f9;
+            padding-bottom: 5px;
+        }
+
+        audio, video {
+            width: 100%;
+            margin: 10px 0 25px 0;
+            border-radius: 12px;
+            background-color: #f8fafc;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            color: #475569;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        form {
+            margin-bottom: 25px;
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #f1f5f9;
+        }
+
+        label {
+            cursor: pointer;
+            color: #475569;
+            margin-left: 5px;
+        }
+
+        .button-container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+        }
+
+        .btn-end {
+            background-color: #334155;
+            color: #ffffff;
+            border: 1px solid #334155;
+        }
+
+        .btn-end:hover {
+            background-color: #1e293b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(51, 65, 85, 0.2);
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-back:hover {
+            background-color: #f1f5f9;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body style="background-color:rgb(135, 204, 239);">
+<body>
 
-    <div style="background-color: rgba(122, 241, 241, 0.788); border-radius: 15px; border-color: rgb(8, 44, 44); padding: 15px;">
-        
-        <b>Lokal Song</b><br>
-        <audio controls src="Addon/SIENNA SPIRO - The Visitor (Official Visualizer).mp3" style="margin: 10px 0;"></audio>
-        <br><br>
+    <div class="main-card">
+        <span class="section-title">Lokal Song</span>
+        <audio controls src="Addon/SIENNA SPIRO - The Visitor (Official Visualizer).mp3"></audio>
 
-        <b>Lokal Video</b><br>
-        <video controls src="Addon/Bruno Mars - Risk It All [Official Music Video].mp4" width="300" style="margin: 10px 0;"></video>
-        <br><br>
+        <span class="section-title">Lokal Video</span>
+        <video controls src="Addon/Bruno Mars - Risk It All [Official Music Video].mp4"></video>
 
-        <b>List</b>
+        <span class="section-title">List Hewan</span>
         <ul>
             <li>Ayam</li>
             <li>Sapi</li>
             <li>Kambing</li>
         </ul>
 
-        <b>Radio Button</b>
-        <form style="margin-top: 10px;">
+        <span class="section-title">Pilih Klub Bola</span>
+        <form>
             <input type="radio" id="pilihan1" name="warna" value="merah">
             <label for="pilihan1">Manchester United</label><br>
 
@@ -36,9 +138,7 @@
             <label for="pilihan3">Barcelona</label>
         </form>
 
-        <p>
-            <b>Pilih Hobi Kamu:</b>
-        </p>
+        <span class="section-title">Pilih Hobi Kamu</span>
         <form>
             <input type="checkbox" id="hobi1" name="hobi" value="coding">
             <label for="hobi1">Bermain Game</label><br>
@@ -50,12 +150,10 @@
             <label for="hobi3">Mendengarkan Musik</label>
         </form>
     </div>
-    <div style="margin-top: 20px;">
-        <button style="border-radius: 5px;">
-            <a href="page3.html" target="_self" title="This Is The END">
-                END
-            </a>
-        </button>
+
+    <div class="button-container">
+        <a href="index.html" class="btn btn-back">Back</a>
+        <a href="page3.html" class="btn btn-end" title="This Is The END">END</a>
     </div>
 
 </body>
