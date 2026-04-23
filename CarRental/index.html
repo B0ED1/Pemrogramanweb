@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="search">
+        <div class="title">
+            <h1>Car Rental</h1>
+            <p>Find the perfect car for your next adventure</p>
+            <hr>
+        </div>
+        <div class="form-container">
+            <div class="form-group">
+                <label for="pickup">Rental Location:</label>
+                <select id="pickup" name="pickup">
+                    <option value="">Select Location</option>
+                    <option value="location1">Yogyakarta</option>
+                    <option value="location2">Bali</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date">Rental Start Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date">
+            </div>
+            <div class="form-group">
+                <label for="return-date">Rental End Date:</label>
+                <input type="date" id="return-date" name="return-date">
+            </div>
+            <button type="submit">Search</button>
+        </div>
+    </div>
+
+    <div class="car-list">
+        <h2>Car List</h2>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/1200x/bd/0e/45/bd0e45808ac3a181e6ef049c6eafae16.jpg" alt="Car 1">
+            <h3>BMW M3</h3>
+            <a href="https://www.bmw.co.id/en/all-models/m-series/bmw-3-series-m-models/bmw-m3-sedan-technical-data.html" class="btn btn-next" target="_blank">Car Detail</a>
+            <p>Harga</p>
+        </div>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/1200x/9a/65/44/9a6544207dda612a5cec0ff832a7f1b4.jpg" alt="Car 2">
+            <h3>Mazda RX 7</h3>
+            <a href="https://www.ultimatespecs.com/car-specs/Mazda/7613/Mazda-RX-7-FD-Twin-Turbo.html" class="btn btn-next" target="_blank">Car Detail</a>
+            <p>Harga</p>
+        </div>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/1200x/f0/cb/bd/f0cbbdb2ad7f2800774808149a13c38e.jpg" alt="Car 3">
+            <h3>Mercedes AMG C63</h3>
+            <a href="https://www.auto-data.net/en/mercedes-benz-c-class-w206-amg-c-63-s-e-performance-680hp-plug-in-hybrid-4matic-amg-speedshift-mct-9g-46524" class="btn btn-next" target="_blank">Car Detail</a>
+            <p>Harga</p>
+        </div>
+        <div class="car-item">
+            <img src="https://i.pinimg.com/1200x/d3/50/1c/d3501cf63b914e8a52c903b1b9dbeb92.jpg" alt="Car 4">
+            <h3>Toyota Alphard</h3>
+            <a href="https://www.ultimatespecs.com/car-specs/Toyota/33730/Toyota-Alphard-240G.html" class="btn btn-next" target="_blank">Car Detail</a>
+            <p>Harga</p>
+        </div>
+    </div>
+</body>
+</html>
