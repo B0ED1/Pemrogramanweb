@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Rental</title>
+    <title>Car Rental | Premium Experience</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
+    <nav class="navbar">
+        <div class="nav-logo">LUXE<span>DRIVE</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cars</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#" class="btn-nav">Login</a></li>
+        </ul>
+    </nav>
+
     <div id="search">
         <div class="title">
-            <h1>Car Rental</h1>
+            <h1>Premium Car Rental</h1>
             <p>Find the perfect car for your next adventure</p>
             <hr>
         </div>
         <div class="form-container">
             <div class="form-group">
-                <label for="pickup">Rental Location:</label>
+                <label for="pickup">Rental Location</label>
                 <select id="pickup" name="pickup">
                     <option value="">Select Location</option>
                     <option value="location1">Yogyakarta</option>
@@ -25,42 +35,58 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="pickup-date">Rental Start Date:</label>
+                <label for="pickup-date">Start Date</label>
                 <input type="date" id="pickup-date" name="pickup-date">
             </div>
             <div class="form-group">
-                <label for="return-date">Rental End Date:</label>
+                <label for="return-date">End Date</label>
                 <input type="date" id="return-date" name="return-date">
             </div>
-            <button type="submit">Search</button>
+            <button type="submit" class="btn-search">Search Now</button>
         </div>
     </div>
 
     <div class="car-list">
-        <h2>Car List</h2>
-        <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/bd/0e/45/bd0e45808ac3a181e6ef049c6eafae16.jpg" alt="Car 1">
-            <h3>BMW M3</h3>
-            <a href="https://www.bmw.co.id/en/all-models/m-series/bmw-3-series-m-models/bmw-m3-sedan-technical-data.html" class="btn btn-next" target="_blank">Car Detail</a>
-            <p>Harga</p>
+        <h2>Available Fleet</h2>
+        
+        <div class="car-card">
+            <div class="badge">Available</div>
+            <img src="https://i.pinimg.com/1200x/82/95/15/829515374098deda934647bf97901aa8.jpg" alt="BMW M3">
+            <div class="car-info">
+                <h3>BMW M3 Sedan</h3>
+                <p class="price">Rp 2.500.000 <span>/ day</span></p>
+                <a href="https://www.caranddriver.com/bmw/m3/specs" class="btn btn-next" target="_blank">View Details</a>
+            </div>
         </div>
-        <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/9a/65/44/9a6544207dda612a5cec0ff832a7f1b4.jpg" alt="Car 2">
-            <h3>Mazda RX 7</h3>
-            <a href="https://www.ultimatespecs.com/car-specs/Mazda/7613/Mazda-RX-7-FD-Twin-Turbo.html" class="btn btn-next" target="_blank">Car Detail</a>
-            <p>Harga</p>
+
+        <div class="car-card">
+            <div class="badge">Available</div>
+            <img src="https://i.pinimg.com/736x/95/bc/0c/95bc0c564651aaec04a102eb42ffcf59.jpg" alt="Mazda RX 7">
+            <div class="car-info">
+                <h3>Mazda RX-7 FD</h3>
+                <p class="price">Rp 3.000.000 <span>/ day</span></p>
+                <a href="https://www.ultimatespecs.com/car-specs/Mazda/7613/Mazda-RX-7-FD-Twin-Turbo.html" class="btn btn-next" target="_blank">View Details</a>
+            </div>
         </div>
-        <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/f0/cb/bd/f0cbbdb2ad7f2800774808149a13c38e.jpg" alt="Car 3">
-            <h3>Mercedes AMG C63</h3>
-            <a href="https://www.auto-data.net/en/mercedes-benz-c-class-w206-amg-c-63-s-e-performance-680hp-plug-in-hybrid-4matic-amg-speedshift-mct-9g-46524" class="btn btn-next" target="_blank">Car Detail</a>
-            <p>Harga</p>
+
+        <div class="car-card">
+            <div class="badge">Available</div>
+            <img src="https://i.pinimg.com/1200x/66/1d/de/661dde34b271081832b3fc99fff07c3e.jpg" alt="Mercedez-Benz 190E">
+            <div class="car-info">
+                <h3>Mercedes-Benz AMG GT</h3>
+                <p class="price">Rp 2.800.000 <span>/ day</span></p>
+                <a href="https://www.ultimatespecs.com/car-specs/Mercedes-Benz/M13611/AMG-GT-(C192)" class="btn btn-next" target="_blank">View Details</a>
+            </div>
         </div>
-        <div class="car-item">
-            <img src="https://i.pinimg.com/1200x/d3/50/1c/d3501cf63b914e8a52c903b1b9dbeb92.jpg" alt="Car 4">
-            <h3>Toyota Alphard</h3>
-            <a href="https://www.ultimatespecs.com/car-specs/Toyota/33730/Toyota-Alphard-240G.html" class="btn btn-next" target="_blank">Car Detail</a>
-            <p>Harga</p>
+
+        <div class="car-card">
+            <div class="badge">Available</div>
+            <img src="https://i.pinimg.com/736x/1c/fb/10/1cfb106ec2c828a4452f93ba499d1029.jpg" alt="Audi Rs6">
+            <div class="car-info">
+                <h3>Audi Rs6</h3>
+                <p class="price">Rp 1.500.000 <span>/ day</span></p>
+                <a href="https://www.ultimatespecs.com/car-specs/Audi/64792/Audi-A6-(C7)-Avant-RS6-40-TFSI-Quattro-Tiptronic-8Speed.html" class="btn btn-next" target="_blank">View Details</a>
+            </div>
         </div>
     </div>
 </body>
