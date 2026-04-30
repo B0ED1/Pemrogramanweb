@@ -237,3 +237,67 @@ body {
 .btn-submit:hover {
     background-color: #555;
 }
+/* Styling Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 10px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #ffce00; /* Warna aksen emas/kuning */
+    margin-bottom: 15px;
+}
+
+.footer-section span {
+    color: #fff;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffce00;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    font-size: 12px;
+    color: #bbb;
+}
