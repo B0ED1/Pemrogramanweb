@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #7a736a;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+.grunge-text {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 30px 0 20px 0;
+    color: #111;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #857d73;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #635d55;
+}
+
+.logo h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2a2a2a;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section .grunge-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    z-index: 10;
+}
+
+.product-section {
+    padding: 40px 0;
+    width: 90%;
+    margin: auto;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s, transform 0.2s;
+    z-index: 10;
+}
+
+.arrow:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+.carousel-container {
+    flex: 1;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-card {
+    min-width: calc(33.333% - 14px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background-color: #eaeaea;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.price {
+    margin-top: 15px;
+    font-style: italic;
+    font-weight: 600;
+    color: #333;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+    border-radius: 50%;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.dot.active {
+    opacity: 1;
+    background-color: #000;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section p {
+    font-weight: 600;
+    color: #4a3e2a;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #5a544d;
+}
+
+.footer-banner {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.footer-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.5);
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 50px;
+    max-width: 900px;
+}
+
+.footer-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.footer-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.copyright {
+    text-align: right;
+    padding: 15px 50px;
+    color: #111;
+    font-weight: bold;
+    background-color: #5a544d;
+}
